@@ -1,0 +1,51 @@
+#required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
+=dev-libs/libxml2-2.7.8-r4 python
+#required by x11-libs/gtk+-2.24.8-r1, required by x11-misc/gxmessage-2.6.2, required by x11-wm/awesome-3.4.9-r1, required by awesome (argument)
+=x11-libs/cairo-1.10.2-r1 xcb X
+#required by x11-wm/awesome-3.4.9-r1, required by awesome (argument)
+>=media-gfx/imagemagick-6.7.5.3 png
+#required by x11-wm/awesome-3.4.9-r1, required by awesome (argument)
+=media-libs/imlib2-1.4.4 png
+#required by www-client/chromium-17.0.963.56, required by chromium (argument)
+=dev-libs/libxml2-2.7.8-r4 icu
+#required by x11-terms/terminator-0.95, required by terminator (argument)
+=x11-libs/vte-0.28.2-r202 python
+#required by x11-terms/terminator-0.95, required by terminator (argument)
+>=dev-libs/keybinder-0.2.2 python
+
+#################Mine###########################
+app-emulation/virtualbox-guest-additions X
+x11-base/xorg-server udev
+app-editors/gvim cscope gtk ruby perl python
+
+
+
+#media-libs/libpng apng
+##x11-libs/cairo xcb
+##media-libs/imlib2 png
+##media-gfx/imagemagick png
+##media-libs/gd fontconfig png truetype
+##x11-wm/awesome dbus
+##dev-libs/libxml2 icu
+##
+##dev-java/sun-jdk -doc
+##############XFCE4#####################
+#xfce-base/xfce4-meta minimal #-svg 
+#xfce-base/xfce4-session  -gnome #-policykit
+#xfce-base/xfwm4 startup-notification #-xcomposite
+#xfce-base/libxfce4ui startup-notification
+#xfce-base/xfce-utils dbus
+#xfce-base/libxfce4ui startup-notification
+##x11-misc/xdg-user-dirs -nls
+
+
+
+#app-portage/layman git subversion
+#
+############################
+#app-portage/eix tools sqlite
+##sys-devel/gcc bootstrap 
+#
+#app-admin/conky truetype
+#required by media-libs/giblib-1.2.4, required by media-gfx/feh-1.16.2, required by feh (argument)
+=media-libs/imlib2-1.4.4 X
