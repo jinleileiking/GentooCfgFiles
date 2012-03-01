@@ -16,10 +16,24 @@
 #################Mine###########################
 app-emulation/virtualbox-guest-additions X
 x11-base/xorg-server udev
-app-editors/gvim cscope gtk ruby perl python
+app-editors/gvim cscope gtk ruby perl python gnome aqua
 
 
+media-gfx/scrot bash-completion
+app-i18n/ibus X gtk
+sys-apps/dbus X
+media-libs/freetype X
+app-portage/eix zsh-completion
+#media-fonts/dejavu fontforge X
+#x11-libs/gtk+ aqua vim-syntax xinerama
+#x11-base/xorg-drivers VIDEO_CARDS="virtualbox"
+#x11-base/xorg-drivers INPUT_DEVICES="evdev" 
 
+
+##########################################################################
+#
+#
+#
 #media-libs/libpng apng
 ##x11-libs/cairo xcb
 ##media-libs/imlib2 png
@@ -49,3 +63,9 @@ app-editors/gvim cscope gtk ruby perl python
 #app-admin/conky truetype
 #required by media-libs/giblib-1.2.4, required by media-gfx/feh-1.16.2, required by feh (argument)
 =media-libs/imlib2-1.4.4 X
+
+
+
+#required by gnome-base/gvfs-1.10.1[udev], required by gnome-base/libgnome-2.32.1, required by gnome-base/libgnomeui-2.24.5, required by app-editors/gvim-7.3.266[gtk,gnome], required by gvim (argument)
+=sys-fs/udev-171-r5 gudev
+sys-apps/ack bash-completion

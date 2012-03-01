@@ -26,3 +26,5 @@ app-emulation/virtualbox-guest-additions ~x86
 #app-text/chmsee ~x86
 x11-plugins/vicious ~x86
 media-fonts/ubuntu-font-family ~x86
+#required by libhid (argument)
+=dev-libs/libhid-0.2.16-r3 ~x86
