@@ -5,6 +5,7 @@
 CFLAGS="-O2 -march=core2 -pipe"
 MAKEOPTS="-j2"
 CXXFLAGS="${CFLAGS}"
+
 # WARNING: Changing your CHOST is not something that should be done lightly.
 # Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
 CHOST="i686-pc-linux-gnu"
@@ -17,6 +18,7 @@ VIDEO_CARDS="virtualbox"
 
 #USE="udev X gdu extras device-mapper policykit cdda sqlite cairo jpeg gtk gnome ruby cscope"
 USE="X gtk"
+LINGUAS="zh_CN zh_TW"
 
 #FETCHCOMMAND='/usr/bin/axel -a -S4 -o "\${DISTDIR}/\${FILE}" "\${URI}"'
 #RESUMECOMMAND="${FETCHCOMMAND}"
@@ -25,4 +27,3 @@ USE="X gtk"
 #ACCEPT_LICENSE="* Oracle-BCLA-JavaSE"
 #source /var/lib/layman/make.conf
 
-LINGUAS="zh_CN zh_TW"
