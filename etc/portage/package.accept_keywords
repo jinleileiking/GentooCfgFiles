@@ -1,16 +1,11 @@
-#required by ibus-sunpinyin (argument)
-=app-i18n/ibus-sunpinyin-2.0.3-r1 ~x86
-#required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-=app-i18n/sunpinyin-2.0.3-r1 ~x86
-#required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
-=dev-lang/spidermonkey-1.7.0-r2 ~x86
-#required by dev-db/mongodb-2.0.2, required by mongodb (argument)
-=app-arch/snappy-1.0.4 ~x86
-#required by mongodb (argument)
-=dev-db/mongodb-2.0.2 ~x86
 
 ####################Mine####################
 app-emulation/virtualbox-guest-additions ~x86
+app-i18n/ibus ~x86
+x11-plugins/vicious ~x86
+media-fonts/ubuntu-font-family ~x86
+
+
 #x11-drivers/xf86-video-virtualbox ~x86
 #app-emulation/xf86-input-virtualbox ~x86
 #x11-drivers/xf86-input-virtualbox ~x86
@@ -24,7 +19,22 @@ app-emulation/virtualbox-guest-additions ~x86
 #net-misc/proxytunnel ~x86
 #app-text/foxitreader ~x86
 #app-text/chmsee ~x86
-x11-plugins/vicious ~x86
-media-fonts/ubuntu-font-family ~x86
+
+
+###################################################################
+
+
+
 #required by libhid (argument)
 =dev-libs/libhid-0.2.16-r3 ~x86
+x11-base/xorg-drivers x86 ~x86
+#required by ibus-sunpinyin (argument)
+=app-i18n/ibus-sunpinyin-2.0.3-r1 ~x86
+#required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
+=app-i18n/sunpinyin-2.0.3-r1 ~x86
+#required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
+=dev-lang/spidermonkey-1.7.0-r2 ~x86
+#required by dev-db/mongodb-2.0.2, required by mongodb (argument)
+=app-arch/snappy-1.0.4 ~x86
+#required by mongodb (argument)
+=dev-db/mongodb-2.0.2 ~x86
