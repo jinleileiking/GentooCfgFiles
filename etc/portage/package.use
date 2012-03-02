@@ -4,18 +4,17 @@ app-emulation/virtualbox-guest-additions X
 
 x11-base/xorg-server udev
 
-app-editors/gvim cscope gtk ruby perl python gnome aqua
-
 
 media-gfx/scrot bash-completion
-
-app-i18n/ibus X gtk
 
 sys-apps/dbus X
 
 media-libs/freetype X
 
 app-portage/eix zsh-completion
+
+app-editors/gvim cscope ruby python perl debug
+
 
 #media-fonts/dejavu fontforge X
 #x11-libs/gtk+ aqua vim-syntax xinerama
