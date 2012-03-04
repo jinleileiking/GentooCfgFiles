@@ -14,8 +14,8 @@ media-fonts/ubuntu-font-family ~x86
 #media-libs/libpng ~x86
 #dev-java/sun-jdk ~x86
 #dev-util/android-sdk-update-manager ~x86
-#app-i18n/ibus-sunpinyin ~x86
-#app-i18n/sunpinyin ~x86
+app-i18n/ibus-sunpinyin ~x86
+app-i18n/sunpinyin ~x86
 #net-misc/proxytunnel ~x86
 #app-text/foxitreader ~x86
 #app-text/chmsee ~x86
@@ -23,19 +23,17 @@ media-fonts/ubuntu-font-family ~x86
 
 ###################################################################
 
+#required by dev-db/mongodb-2.0.3[-v8], required by mongodb (argument)
+=dev-lang/spidermonkey-1.7.0-r2 ~x86
+#required by mongodb (argument)
+=dev-db/mongodb-2.0.3 ~x86
+#required by dev-db/mongodb-2.0.3, required by mongodb (argument)
+=app-arch/snappy-1.0.4 ~x86
 
 
 #required by libhid (argument)
-=dev-libs/libhid-0.2.16-r3 ~x86
-x11-base/xorg-drivers x86 ~x86
 #required by ibus-sunpinyin (argument)
-=app-i18n/ibus-sunpinyin-2.0.3-r1 ~x86
 #required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-=app-i18n/sunpinyin-2.0.3-r1 ~x86
 #required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
-=dev-lang/spidermonkey-1.7.0-r2 ~x86
 #required by dev-db/mongodb-2.0.2, required by mongodb (argument)
-=app-arch/snappy-1.0.4 ~x86
 #required by mongodb (argument)
-=dev-db/mongodb-2.0.2 ~x86
-app-i18n/ibus-pinyin -~x86
