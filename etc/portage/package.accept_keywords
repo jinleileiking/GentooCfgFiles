@@ -37,3 +37,5 @@ app-i18n/sunpinyin ~x86
 #required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
 #required by dev-db/mongodb-2.0.2, required by mongodb (argument)
 #required by mongodb (argument)
+#required by sxiv (argument)
+=media-gfx/sxiv-1.0 ~x86
