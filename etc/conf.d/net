@@ -1,2 +1,8 @@
 config_eth0="dhcp"
+config_wlan0="dhcp"
+# Prefer wpa_supplicant over wireless-tools
+modules="wpa_supplicant"
 
+# It's important that we tell wpa_supplicant which driver we should
+# be using as it's not very good at guessing yet
+wpa_supplicant_wlan0="wpa_supplicant"

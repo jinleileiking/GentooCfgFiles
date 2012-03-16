@@ -61,4 +61,5 @@ app-i18n/ibus gtk
 =x11-libs/vte-0.28.2-r202 python
 #required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
 >=dev-libs/libxml2-2.7.8-r5 python icu
+media-plugins/audacious-plugins cue ffmpeg flac mp3
 
