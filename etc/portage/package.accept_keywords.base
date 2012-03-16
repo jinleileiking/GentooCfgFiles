@@ -1,8 +1,6 @@
 
-####################Mine####################
 app-emulation/virtualbox-guest-additions ~x86
 app-i18n/ibus ~x86
-x11-plugins/vicious ~x86
 media-fonts/ubuntu-font-family ~x86
 
 
@@ -21,29 +19,3 @@ app-i18n/sunpinyin ~x86
 #app-text/chmsee ~x86
 
 
-###################################################################
-
-#required by dev-db/mongodb-2.0.3[-v8], required by mongodb (argument)
-=dev-lang/spidermonkey-1.7.0-r2 ~x86
-#required by mongodb (argument)
-=dev-db/mongodb-2.0.3 ~x86
-#required by dev-db/mongodb-2.0.3, required by mongodb (argument)
-=app-arch/snappy-1.0.4 ~x86
-app-emulation/virtualbox
-
-
-#required by libhid (argument)
-#required by ibus-sunpinyin (argument)
-#required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-#required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
-#required by dev-db/mongodb-2.0.2, required by mongodb (argument)
-#required by mongodb (argument)
-<<<<<<< HEAD
-#required by app-emulation/virtualbox-4.1.8-r1[additions], required by virtualbox (argument)
-=app-emulation/virtualbox-additions-4.1.8 ~x86
-#required by app-emulation/virtualbox-4.1.8-r1, required by virtualbox (argument)
-=app-emulation/virtualbox-modules-4.1.8 ~x86
-=======
-#required by sxiv (argument)
-=media-gfx/sxiv-1.0 ~x86
->>>>>>> http/master

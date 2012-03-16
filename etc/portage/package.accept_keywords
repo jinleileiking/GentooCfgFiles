@@ -38,12 +38,5 @@ app-emulation/virtualbox
 #required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
 #required by dev-db/mongodb-2.0.2, required by mongodb (argument)
 #required by mongodb (argument)
-<<<<<<< HEAD
-#required by app-emulation/virtualbox-4.1.8-r1[additions], required by virtualbox (argument)
-=app-emulation/virtualbox-additions-4.1.8 ~x86
-#required by app-emulation/virtualbox-4.1.8-r1, required by virtualbox (argument)
-=app-emulation/virtualbox-modules-4.1.8 ~x86
-=======
 #required by sxiv (argument)
 =media-gfx/sxiv-1.0 ~x86
->>>>>>> http/master
