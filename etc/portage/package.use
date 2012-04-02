@@ -2,7 +2,7 @@
 #################Mine###########################
 app-emulation/virtualbox-guest-additions X
 
-x11-base/xorg-server udev
+x11-base/xorg-server udev kdrive
 
 media-gfx/scrot bash-completion
 
@@ -61,4 +61,14 @@ app-i18n/ibus gtk
 =x11-libs/vte-0.28.2-r202 python
 #required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
 >=dev-libs/libxml2-2.7.8-r5 python icu
+x11-wm/awesome dbus
+x11-libs/gtk+ doc vim-syntax examples
+www-plugins/adobe-flash 32bit
+app-text/acroread linguas_zh_TW linguas_zh_CN en linguas_en
+app-i18n/fcitx gtk 
+app-i18n/fcitx-configtool gtk
+app-i18n/fcitx-sunpinyin gtk
+sys-devel/gdb server
 
+#required by app-text/evince-2.32.0-r3, required by evince (argument)
+=app-text/poppler-0.16.7 cairo

@@ -39,3 +39,25 @@ app-i18n/sunpinyin ~x86
 #required by mongodb (argument)
 #required by sxiv (argument)
 =media-gfx/sxiv-1.0 ~x86
+x11-misc/arandr
+#required by gdbserver (argument)
+=dev-util/gdbserver-7.3.1 **
+#required by msp430-gcc (argument)
+=dev-embedded/msp430-gcc-4.6.2_p20120311 ~x86
+#required by msp430-gdb (argument)
+=dev-embedded/msp430-gdb-7.2_p20111205 ~x86
+#required by msp430mcu (argument)
+=dev-embedded/msp430mcu-20120311 ~x86
+#required by dev-embedded/msp430-binutils-2.21.1_p20120224, required by dev-embedded/msp430-gcc-4.6.2_p20120311, required by msp430-gcc (argument)
+=sys-devel/binutils-config-3-r3 ~x86
+#required by msp430-binutils (argument)
+=dev-embedded/msp430-binutils-2.21.1_p20120224 ~x86
+#required by msp430-libc (argument)
+=dev-embedded/msp430-libc-20120224 ~x86
+app-i18n/fcitx
+#required by fcitx-configtool (argument)
+=app-i18n/fcitx-configtool-0.2.0 ~x86
+#required by dev-java/ibm-jdk-bin (argument)
+=dev-java/ibm-jdk-bin-1.6.0.9_p2-r1 ~x86
+#required by dev-util/android-sdk-update-manager (argument)
+=dev-util/android-sdk-update-manager-17 ~x86
