@@ -1,0 +1,21 @@
+
+app-emulation/virtualbox-guest-additions ~x86
+app-i18n/ibus ~x86
+media-fonts/ubuntu-font-family ~x86
+
+
+#x11-drivers/xf86-video-virtualbox ~x86
+#app-emulation/xf86-input-virtualbox ~x86
+#x11-drivers/xf86-input-virtualbox ~x86
+#www-client/firefox ~x86 
+#net-libs/xulrunner ~x86
+#media-libs/libpng ~x86
+#dev-java/sun-jdk ~x86
+#dev-util/android-sdk-update-manager ~x86
+app-i18n/ibus-sunpinyin ~x86
+app-i18n/sunpinyin ~x86
+#net-misc/proxytunnel ~x86
+#app-text/foxitreader ~x86
+#app-text/chmsee ~x86
+
+

@@ -12,55 +12,6 @@ app-editors/gvim cscope ruby python perl debug gtk
 
 app-i18n/ibus gtk
 
-#x11-libs/cairo xcb
-##media-libs/imlib2 png
-##media-gfx/imagemagick png
-##media-libs/gd fontconfig png truetype
-##x11-wm/awesome dbus
-##dev-libs/libxml2 icu
-##
-##dev-java/sun-jdk -doc
-##############XFCE4#####################
-#xfce-base/xfce4-meta minimal #-svg 
-#xfce-base/xfce4-session  -gnome #-policykit
-#xfce-base/xfwm4 startup-notification #-xcomposite
-#xfce-base/libxfce4ui startup-notification
-#xfce-base/xfce-utils dbus
-#xfce-base/libxfce4ui startup-notification
-##x11-misc/xdg-user-dirs -nls
-
-
-
-#app-portage/layman git subversion
-#
-############################
-#app-portage/eix tools sqlite
-##sys-devel/gcc bootstrap 
-#
-#app-admin/conky truetype
-
-
-
-
-##########################################################################
-
-#required by media-libs/giblib-1.2.4, required by media-gfx/feh-1.16.2, required by feh (argument)
-#required by gnome-base/gvfs-1.10.1[udev], required by gnome-base/libgnome-2.32.1, required by gnome-base/libgnomeui-2.24.5, required by app-editors/gvim-7.3.266[gtk,gnome], required by gvim (argument)
-#required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
-#required by x11-libs/gtk+-2.24.8-r1, required by x11-misc/gxmessage-2.6.2, required by x11-wm/awesome-3.4.9-r1, required by awesome (argument)
-#required by x11-wm/awesome-3.4.9-r1, required by awesome (argument)
-#required by x11-terms/terminator-0.95, required by terminator (argument)
->=dev-libs/keybinder-0.2.2 python
-#required by x11-wm/awesome-3.4.9-r1, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by app-i18n/ibus-1.4.1[python], required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-=x11-libs/cairo-1.10.2-r1 xcb
-#required by x11-wm/awesome-3.4.9-r1, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by app-i18n/ibus-1.4.1[python], required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-=media-gfx/imagemagick-6.7.5.3 png
-#required by x11-wm/awesome-3.4.9-r1, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by app-i18n/ibus-1.4.1[python], required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-=media-libs/imlib2-1.4.4 png
-#required by x11-terms/terminator-0.95, required by terminator (argument)
-=x11-libs/vte-0.28.2-r202 python
-#required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
->=dev-libs/libxml2-2.7.8-r5 python icu
 x11-wm/awesome dbus
 x11-libs/gtk+ doc vim-syntax examples
 www-plugins/adobe-flash 32bit
@@ -70,5 +21,6 @@ app-i18n/fcitx-configtool gtk
 app-i18n/fcitx-sunpinyin gtk
 sys-devel/gdb server
 
-#required by app-text/evince-2.32.0-r3, required by evince (argument)
-=app-text/poppler-0.16.7 cairo
+
+media-plugins/audacious-plugins cue ffmpeg flac mp3
+

@@ -29,6 +29,7 @@ app-i18n/sunpinyin ~x86
 =dev-db/mongodb-2.0.3 ~x86
 #required by dev-db/mongodb-2.0.3, required by mongodb (argument)
 =app-arch/snappy-1.0.4 ~x86
+app-emulation/virtualbox
 
 
 #required by libhid (argument)
