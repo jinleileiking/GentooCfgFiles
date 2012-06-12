@@ -1,64 +1,45 @@
-
-####################Mine####################
-app-emulation/virtualbox-guest-additions ~x86
-app-i18n/ibus ~x86
-x11-plugins/vicious ~x86
-media-fonts/ubuntu-font-family ~x86
-
-
-#x11-drivers/xf86-video-virtualbox ~x86
-#app-emulation/xf86-input-virtualbox ~x86
-#x11-drivers/xf86-input-virtualbox ~x86
-#www-client/firefox ~x86 
-#net-libs/xulrunner ~x86
-#media-libs/libpng ~x86
-#dev-java/sun-jdk ~x86
-#dev-util/android-sdk-update-manager ~x86
-app-i18n/ibus-sunpinyin ~x86
-app-i18n/sunpinyin ~x86
-#net-misc/proxytunnel ~x86
-#app-text/foxitreader ~x86
-#app-text/chmsee ~x86
-
-
-###################################################################
-
-#required by dev-db/mongodb-2.0.3[-v8], required by mongodb (argument)
-=dev-lang/spidermonkey-1.7.0-r2 ~x86
+#required by google-chrome (argument)
+=www-client/google-chrome-19.0.1084.46_p135956 ~amd64
+#required by luainotify (argument)
+=dev-lua/luainotify-20090818 **
+#required by dev-db/mongodb-2.0.5[-v8], required by mongodb (argument)
+=dev-lang/spidermonkey-1.7.0-r2 ~amd64
+#required by dev-db/mongodb-2.0.5, required by mongodb (argument)
+=app-arch/snappy-1.0.4 ~amd64
 #required by mongodb (argument)
-=dev-db/mongodb-2.0.3 ~x86
-#required by dev-db/mongodb-2.0.3, required by mongodb (argument)
-=app-arch/snappy-1.0.4 ~x86
+=dev-db/mongodb-2.0.5 ~amd64
+#required by alsa-mixer (argument)
+=dev-haskell/alsa-mixer-0.1.2 ~amd64
+#required by dev-haskell/alsa-mixer-0.1.2, required by alsa-mixer (argument)
+=dev-haskell/alsa-core-0.5.0.1 ~amd64
 app-emulation/virtualbox
-
-
-#required by libhid (argument)
-#required by ibus-sunpinyin (argument)
-#required by app-i18n/ibus-sunpinyin-2.0.3-r1, required by ibus-sunpinyin (argument)
-#required by dev-db/mongodb-2.0.2[-v8], required by mongodb (argument)
-#required by dev-db/mongodb-2.0.2, required by mongodb (argument)
-#required by mongodb (argument)
-#required by sxiv (argument)
-=media-gfx/sxiv-1.0 ~x86
-x11-misc/arandr
-#required by gdbserver (argument)
-=dev-util/gdbserver-7.3.1 **
-#required by msp430-gcc (argument)
-=dev-embedded/msp430-gcc-4.6.2_p20120311 ~x86
-#required by msp430-gdb (argument)
-=dev-embedded/msp430-gdb-7.2_p20111205 ~x86
-#required by msp430mcu (argument)
-=dev-embedded/msp430mcu-20120311 ~x86
-#required by dev-embedded/msp430-binutils-2.21.1_p20120224, required by dev-embedded/msp430-gcc-4.6.2_p20120311, required by msp430-gcc (argument)
-=sys-devel/binutils-config-3-r3 ~x86
-#required by msp430-binutils (argument)
-=dev-embedded/msp430-binutils-2.21.1_p20120224 ~x86
-#required by msp430-libc (argument)
-=dev-embedded/msp430-libc-20120224 ~x86
-app-i18n/fcitx
+#required by app-emulation/virtualbox-4.1.14[additions], required by virtualbox (argument)
+=app-emulation/virtualbox-additions-4.1.14 ~amd64
+#required by app-emulation/virtualbox-4.1.14, required by virtualbox (argument)
+=app-emulation/virtualbox-modules-4.1.14 ~amd64
+#required by virtualbox-bin (argument)
+=app-emulation/virtualbox-bin-4.1.14 ~amd64
+media-fonts/ubuntu-font-family amd64 ~amd64
+app-emulation/wine
+#required by smplayer2 (argument)
+=media-video/smplayer2-0.7.1_p20120301 ~amd64
+#required by app-i18n/fcitx-configtool-0.4.3, required by fcitx-configtool (argument)
+=app-i18n/fcitx-4.2.3 ~amd64
 #required by fcitx-configtool (argument)
-=app-i18n/fcitx-configtool-0.2.0 ~x86
-#required by dev-java/ibm-jdk-bin (argument)
-=dev-java/ibm-jdk-bin-1.6.0.9_p2-r1 ~x86
-#required by dev-util/android-sdk-update-manager (argument)
-=dev-util/android-sdk-update-manager-17 ~x86
+=app-i18n/fcitx-configtool-0.4.3 ~amd64
+#required by deadbeef (argument)
+=media-sound/deadbeef-0.5.1-r3 ~amd64
+#required by sys-apps/pkgcore-0.7.7.8-r1, required by pkgcore (argument)
+=dev-python/snakeoil-0.4.6 ~amd64
+#required by pkgcore (argument)
+=sys-apps/pkgcore-0.7.7.8-r1 ~amd64
+#required by app-i18n/fcitx-cloudpinyin (argument)
+=app-i18n/fcitx-cloudpinyin-0.2.1 ~amd64
+#required by oracle-jdk-bin (argument)
+=dev-java/oracle-jdk-bin-1.7.0.4 ~amd64
+#required by foxitreader (argument)
+=app-text/foxitreader-1.1.0 ~amd64
+dev-vcs/subversion amd64 ~amd64
+dev-libs/apr
+#required by chmsee (argument)
+=app-text/chmsee-9999 **

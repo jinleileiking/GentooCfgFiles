@@ -2,8 +2,7 @@
 #################Mine###########################
 app-emulation/virtualbox-guest-additions X
 
-x11-base/xorg-server udev kdrive
-
+x11-base/xorg-server udev
 media-gfx/scrot bash-completion
 
 app-portage/eix zsh-completion
@@ -13,14 +12,39 @@ app-editors/gvim cscope ruby python perl debug gtk
 app-i18n/ibus gtk
 
 x11-wm/awesome dbus
-x11-libs/gtk+ doc vim-syntax examples
-www-plugins/adobe-flash 32bit
+www-plugins/adobe-flash
 app-text/acroread linguas_zh_TW linguas_zh_CN en linguas_en
-app-i18n/fcitx gtk 
+app-i18n/fcitx gtk cairo dbus pango
 app-i18n/fcitx-configtool gtk
 app-i18n/fcitx-sunpinyin gtk
 sys-devel/gdb server
-
-
 media-plugins/audacious-plugins cue ffmpeg flac mp3
 
+#required by x11-wm/awesome-3.4.11, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by x11-terms/terminator-0.96-r1, required by terminator (argument)
+=media-gfx/imagemagick-6.7.6.4 png
+#required by x11-terms/terminator-0.96-r1, required by terminator (argument)
+>=dev-libs/keybinder-0.2.2 python
+#required by x11-wm/awesome-3.4.11, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by x11-terms/terminator-0.96-r1, required by terminator (argument)
+=x11-libs/cairo-1.10.2-r2 xcb
+#required by x11-terms/terminator-0.96-r1, required by terminator (argument)
+>=x11-libs/vte-0.28.2-r203:0 python
+#required by x11-wm/awesome-3.4.11, required by virtual/notification-daemon-0[-gnome], required by x11-libs/libnotify-0.7.4, required by dev-python/notify-python-0.1.1-r2, required by x11-terms/terminator-0.96-r1, required by terminator (argument)
+=media-libs/imlib2-1.4.4 png
+#required by media-libs/mesa-7.11.2, required by x11-base/xorg-server-1.11.2-r2[-minimal], required by x11-drivers/xf86-input-evdev-2.6.0, required by x11-base/xorg-drivers-1.11[input_devices_evdev]
+>=dev-libs/libxml2-2.7.8-r5 python
+#app-emulation/wine win32 win64 -opengl -oss -perl -cups -curses -ncurses -truetype -ssl
+media-video/mplayer2 xvid vdpau
+virtual/ffmpeg x264 truetype vdpau
+media-video/ffmpeg x264 xvid truetype aac
+#required by virtual/ffmpeg-0.10.2-r1, required by media-video/mplayer2-2.0_p20120309, required by media-video/smplayer2-0.7.1_p20120301, required by smplayer2 (argument)
+=media-video/ffmpeg-0.10.2 vdpau
+#required by media-video/smplayer2-0.7.1_p20120301, required by smplayer2 (argument)
+=media-video/mplayer2-2.0_p20120309 png
+media-video/vlc x264 aac
+media-sound/deadbeef mac mp3 flac
+#required by net-p2p/vuze-4.5.1.0, required by net-p2p/vuze-coreplugins-4.5.1.0
+>=dev-java/swt-3.6.1:3.6 cairo
+#required by app-text/evince-2.32.0-r4, required by evince (argument)
+=app-text/poppler-0.18.4-r1 cairo
+=app-emulation/emul-linux-x86-opengl-20120127 development
+media-libs/imlib2 gif jpeg tiff
