@@ -1,0 +1,41 @@
+#!/sbin/runscript
+
+depend() {
+   need localmount
+   need bootmisc
+}
+
+start() {
+    ebegin "Mounting 32bits chroot dirs"
+    mount -o bind /dev /mnt/gentoo32/dev >/dev/null
+    mount -o bind /dev/pts /mnt/gentoo32/dev/pts >/dev/null &
+    mount -o bind /dev/shm /mnt/gentoo32/dev/shm >/dev/null &
+    mount -o bind /proc /mnt/gentoo32/proc >/dev/null
+    mount -o bind /proc/bus/usb /mnt/gentoo32/proc/bus/usb >/dev/null &
+    mount -o bind /sys /mnt/gentoo32/sys >/dev/null &
+    mount -o bind /tmp /mnt/gentoo32/tmp >/dev/null &
+    mount -o bind /usr/portage /mnt/gentoo32/usr/portage/ >/dev/null &
+    eend $? "An error occured while attempting to mount 32bit chroot directories"
+    ebegin "Copying 32bits chroot files"
+    cp -pf /etc/resolv.conf /mnt/gentoo32/etc >/dev/null &
+    cp -pf /etc/passwd /mnt/gentoo32/etc >/dev/null &
+    cp -pf /etc/shadow /mnt/gentoo32/etc >/dev/null &
+    cp -pf /etc/group /mnt/gentoo32/etc >/dev/null &
+    cp -pf /etc/gshadow /mnt/gentoo32/etc >/dev/null &
+    cp -pf /etc/hosts /mnt/gentoo32/etc > /dev/null &
+    cp -Ppf /etc/localtime /mnt/gentoo32/etc >/dev/null &
+    eend $? "An error occured while attempting to copy 32 bits chroot files."
+}
+
+stop() {
+    ebegin "Unmounting 32bits chroot dirs"
+    umount -f /mnt/gentoo32/dev/pts >/dev/null
+    umount -f /mnt/gentoo32/dev/shm >/dev/null
+    umount -f /mnt/gentoo32/dev >/dev/null &
+    umount -f /mnt/gentoo32/proc/bus/usb >/dev/null
+    umount -f /mnt/gentoo32/proc >/dev/null &
+    umount -f /mnt/gentoo32/sys >/dev/null &
+    umount -f /mnt/gentoo32/tmp >/dev/null &
+    umount -f /mnt/gentoo32/usr/portage/ >/dev/null &
+    eend $? "An error occured while attempting to unmount 32bits chroot directories"
+}
