@@ -15,6 +15,7 @@ start() {
     mount -o bind /sys /mnt/gentoo32/sys >/dev/null &
     mount -o bind /tmp /mnt/gentoo32/tmp >/dev/null &
     mount -o bind /usr/portage /mnt/gentoo32/usr/portage/ >/dev/null &
+    mount -o bind /mnt/share /mnt/gentoo32/mnt/share >/dev/null &
     eend $? "An error occured while attempting to mount 32bit chroot directories"
     ebegin "Copying 32bits chroot files"
     cp -pf /etc/resolv.conf /mnt/gentoo32/etc >/dev/null &
@@ -37,5 +38,6 @@ stop() {
     umount -f /mnt/gentoo32/sys >/dev/null &
     umount -f /mnt/gentoo32/tmp >/dev/null &
     umount -f /mnt/gentoo32/usr/portage/ >/dev/null &
+    umount -f /mnt/gentoo32/mnt/share >/dev/null &
     eend $? "An error occured while attempting to unmount 32bits chroot directories"
 }
