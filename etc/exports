@@ -1,0 +1,2 @@
+# /etc/exports: NFS file systems being exported.  See exports(5).
+/home/jinleileiking/work/xp/xpt110a/codes *(async,rw,no_root_squash,no_subtree_check)
