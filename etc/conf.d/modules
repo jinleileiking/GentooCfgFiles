@@ -22,4 +22,4 @@
 # You should consult your kernel documentation and configuration
 # for a list of modules and their options.
 
-# modules_3_2_12="vboxdrv vboxnetadp vboxnetflt"
+modules_3_2_12="vboxdrv vboxnetadp vboxnetflt"
