@@ -56,5 +56,5 @@ ca:12345:ctrlaltdel:/sbin/shutdown -r now
 # extra at boot if /etc/init.d/xdm is not added
 # to the "default" runlevel.
 x:a:once:/etc/X11/startDM.sh
-x1:5:once:/bin/su - -- jinleileiking -l -c '/usr/bin/startx </dev/null >/dev/null 2>&1'
+#x1:5:once:/bin/su - -- jinleileiking -l -c '/usr/bin/startx </dev/null >/dev/null 2>&1'
 
