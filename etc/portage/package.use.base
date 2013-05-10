@@ -1,1 +1,3 @@
 app-editors/gvim python ruby gtk perl cscope
+x11-misc/dmenu xft
+app-emulation/wine png jpeg fontconfig

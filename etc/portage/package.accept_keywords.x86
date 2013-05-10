@@ -1,0 +1,10 @@
+
+app-emulation/virtualbox-guest-additions ~x86
+media-fonts/ubuntu-font-family ~x86
+
+app-i18n/fcitx
+app-i18n/fcitx-configtool
+app-i18n/fcitx-rime
+app-i18n/fcitx-cloudpinyin
+app-i18n/fcitx-sogoupinyin
+app-i18n/fcitx-googlepinyin

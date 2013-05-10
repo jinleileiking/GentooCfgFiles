@@ -1,7 +1,0 @@
-
-app-emulation/virtualbox-guest-additions ~x86
-media-fonts/ubuntu-font-family ~x86
-x11-wm/subtle ~x86
-
-
-#x11-drivers/xf86-video-virtualbox ~x86
