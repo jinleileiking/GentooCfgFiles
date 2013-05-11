@@ -3,7 +3,7 @@
 # Please consult /usr/share/portage/config/make.conf.example for a more
 # detailed example.
 CFLAGS="-O2 -march=core2 -pipe"
-MAKEOPTS="-j3"
+MAKEOPTS="-j2"
 CXXFLAGS="${CFLAGS}"
 
 # WARNING: Changing your CHOST is not something that should be done lightly.
@@ -14,11 +14,11 @@ GENTOO_MIRRORS="http://mirrors.163.com/gentoo/"
 SYNC="rsync://gentoo.tom.com/gentoo-portage"
 
 INPUT_DEVICES="evdev"
-VIDEO_CARDS="intel"
+VIDEO_CARDS="virtualbox"
 
 #USE="udev X gdu extras device-mapper policykit cdda sqlite cairo jpeg gtk gnome ruby cscope"
 USE="X"
-LINGUAS="zh_CN zh_TW"
+#LINGUAS="zh_CN zh_TW"
 
 #FETCHCOMMAND='/usr/bin/axel -a -S4 -o "\${DISTDIR}/\${FILE}" "\${URI}"'
 #RESUMECOMMAND="${FETCHCOMMAND}"

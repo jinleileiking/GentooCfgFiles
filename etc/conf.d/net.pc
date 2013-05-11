@@ -8,3 +8,6 @@ metric_wlan0="10"
 metric_eth0="100"
 config_wlan0="dhcp"
 wpa_supplicant_wlan0="-Dwext"
+
+modules="ifconfig"
+config_enp0s8="192.168.1.133 netmask 255.255.255.0"

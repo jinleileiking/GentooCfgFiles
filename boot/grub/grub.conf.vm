@@ -5,6 +5,7 @@ timeout 5
 # Nice, fat splash-image to spice things up :)
 # Comment out if you don't have a graphics card installed
 # splashimage=(hd0,0)/boot/grub/splash.xpm.gz
+<<<<<<< HEAD:boot/grub/grub.conf
 #
 title Gentoo Linux 3.2
 # Partition where the kernel image (or operating system) is located
@@ -18,9 +19,22 @@ kernel /boot/kernel-3.2.12-gentoo-r2_failsafe root=/dev/sda9
 title Gentoo Linux 3.2-awesome
 root (hd0,6)
 kernel /boot/kernel-3.2.12-gentoo-r2 root=/dev/sda9 ro 5
+=======
 
-title Gentoo Linux 3.2 (rescue)
+# title Gentoo Linux 3.2-awesome
 # Partition where the kernel image (or operating system) is located
+# root (hd0,5)
+# kernel /boot/kernel-3.2.12-gentoo-r2 root=/dev/sda8 ro 5
+
+title Gentoo Linux 
+# Partition where the kernel image (or operating system) is located
+root (hd0,0)
+kernel /boot/kernel-3.7.10-gentoo root=/dev/sda3
+>>>>>>> 902060dd2c40e350e005bae8c9982d7b39f23f01:boot/grub/grub.conf.vm
+
+#title Gentoo Linux 3.2 (rescue)
+# Partition where the kernel image (or operating system) is located
+<<<<<<< HEAD:boot/grub/grub.conf
 root (hd0,6)
 kernel /boot/kernel-3.2.12-gentoo-r2 root=/dev/sda9 init=/bin/bb
 
@@ -30,6 +44,11 @@ kernel /boot/kernel-3.2.12-gentoo-r2 root=/dev/sda9 init=/bin/bb
 rootnoverify (hd0,1)
 makeactive
 chainloader +1
+=======
+#root (hd0,5)
+#kernel /boot/kernel-3.2.12-gentoo-r2 root=/dev/sda8 init=/bin/bb
+
+>>>>>>> 902060dd2c40e350e005bae8c9982d7b39f23f01:boot/grub/grub.conf.vm
 
 title Memtest86
 root (hd0,6)
