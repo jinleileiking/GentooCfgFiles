@@ -36,8 +36,8 @@ su0:S:wait:/sbin/rc single
 su1:S:wait:/sbin/sulogin
 
 # TERMINALS
-#c1:12345:respawn:/sbin/agetty 38400 tty1 linux
-c1:5:respawn:/sbin/agetty  -a jinleileiking -8 -s 38400 tty1 linux
+c1:12345:respawn:/sbin/agetty 38400 tty1 linux
+#c1:5:respawn:/sbin/agetty  -a jinleileiking -8 -s 38400 tty1 linux
 c2:2345:respawn:/sbin/agetty 38400 tty2 linux
 c3:2345:respawn:/sbin/agetty 38400 tty3 linux
 c4:2345:respawn:/sbin/agetty 38400 tty4 linux
