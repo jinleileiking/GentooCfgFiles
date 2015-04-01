@@ -1,6 +1,3 @@
 # /etc/exports: NFS file systems being exported.  See exports(5).
-#/home/jinleileiking/work/xp/xpt110a/codes *(async,rw,no_root_squash,no_subtree_check)
-/home/jinleileiking/work/nfsboot *(async,rw,no_root_squash,no_subtree_check)
-/home/jinleileiking/work/nfsboot_full *(async,rw,no_root_squash,no_subtree_check)
-/mnt/share/work/project/r2k/code *(async,rw,no_root_squash,no_subtree_check)
 
+/home/jinleileiking/work/src *(async,rw,no_root_squash,no_subtree_check)
